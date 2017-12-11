@@ -50,7 +50,17 @@ function maxOfTwoNumbers(num1, num2) {
 }
 
 
+//4. maxOfThree
+function maxOfThree(num1, num2, num3) {
+  // evaluate first 2 using above function
+  let larger = maxOfTwoNumbers(num1, num2);
+  let largest = maxOfTwoNumbers(larger, num3);
+  return largest;
+}
 
+function maxOfThreeReuben(a, b, c) {
+  return maxOfTwoNumbers(a, maxOfTwoNumbers(b, c));
+}
 
 
 
