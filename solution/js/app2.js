@@ -3,7 +3,7 @@
 function lengths(words) {
 
   // this is what we will return
-  let done = [];
+  let done = [];  
 
   // let splitWords = words.split(' ');
 
@@ -18,4 +18,52 @@ function lengths(words) {
   return done;
 
 }
+
+
+
+
+// 2. raise product of first two numbers to 
+// the power of the third
+function transmogrify(numA, numB, numC) {
+  // multiply a + b
+  let mult = (numA * numB);
+  // exponent c
+  let exp = Math.pow(mult, numC);
+
+  return exp;
+
+}
+
+
+
+
+// 3. 
+function maxOfTwoNumbers(num1, num2) {
+
+  if(num1 < num2) {
+    return num2;
+  } else if (num2 < num1) {
+    return num1;
+  } else {
+    return num2;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
